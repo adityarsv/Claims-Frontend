@@ -1,0 +1,165 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #181818; /* Dark background */
+  color: #f5f5f5; /* White text */
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #f5f5f5;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header, .footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222; /* Slightly lighter dark color */
+  color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.header h1, .footer p {
+  margin: 0;
+  font-size: 24px;
+}
+
+main {
+  margin-top: 30px;
+}
+
+/* Form Styles */
+form {
+  background-color: #282828; /* Darker background for forms */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 2px solid #555;
+  border-radius: 8px;
+  background-color: #333; /* Dark background for input fields */
+  color: #f5f5f5; /* White text */
+  font-size: 16px;
+}
+
+input[type="submit"], button {
+  width: 100%;
+  padding: 8px 16px; /* Smaller padding */
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px; /* Smaller font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, button:hover {
+  background-color: #2980b9;
+}
+
+input[type="submit"]:active, button:active {
+  background-color: #1c6691;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 2px solid #444;
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #222; /* Dark striping effect */
+}
+
+tr:nth-child(odd) {
+  background-color: #2c2c2c;
+}
+
+tr:hover {
+  background-color: #444;
+}
+
+/* Alert Styles */
+.alert {
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.alert-success {
+  background-color: #2d6a4f;
+  color: #eaf2e4;
+}
+
+.alert-error {
+  background-color: #9b1d20;
+  color: #f8d7da;
+}
+
+.alert-warning {
+  background-color: #e0a800;
+  color: #4e4e4e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  input, select, textarea {
+    font-size: 14px;
+  }
+
+  input[type="submit"], button {
+    font-size: 16px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
